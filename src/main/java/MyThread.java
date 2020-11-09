@@ -10,7 +10,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        while (counter.getValue() < 100) {
+        while (counter.getValue() < Counter.MAX_NUMBER) {
             counter.incrementCounter();
             logger.info("Extends Thread:" + Thread.currentThread().getName() + " value = "
                     + counter.getValue());

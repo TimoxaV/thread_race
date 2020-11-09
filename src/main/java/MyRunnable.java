@@ -9,7 +9,7 @@ public class MyRunnable implements Runnable {
     }
 
     public void run() {
-        while (counter.getValue() < 100) {
+        while (counter.getValue() < Counter.MAX_NUMBER) {
             counter.incrementCounter();
             logger.info("Runnable Thread:" + Thread.currentThread().getName() + " value = "
                     + counter.getValue());

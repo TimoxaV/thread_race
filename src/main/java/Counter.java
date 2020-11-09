@@ -1,5 +1,5 @@
 public class Counter {
-    private static final int MAX_NUMBER = 100;
+    public static final int MAX_NUMBER = 100;
     private int value = 0;
 
     public int getValue() {
